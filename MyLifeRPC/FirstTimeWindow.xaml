@@ -1,0 +1,32 @@
+﻿<Window x:Class="MyLife.FirstTimeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyLife"
+        mc:Ignorable="d"
+        ResizeMode="NoResize" ShowInTaskbar="False" Topmost="True" Closed="Window_Closed"
+        Title="Create a New Apllication" Height="230" Width="500">
+    <TextBlock Margin="10" TextWrapping="Wrap">
+        1. Go to <Bold><Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://discordapp.com/developers/applications/">Discord Developers website</Hyperlink></Bold>.
+        <LineBreak/>
+        2. Click on <Italic><Bold>"Create an application"</Bold></Italic> button.
+        <LineBreak/>
+        3. Give a name to your application. (Discord will show it as "Playing Name").
+        <LineBreak/>
+        4. Write a small description to your application.
+        <LineBreak/>
+        5. Copy the <Italic><Bold>Client ID</Bold></Italic>, and paste it here:
+        <TextBox Name="clientIdTxt" Margin="8 0 0 -5" Width="150" PreviewKeyDown="clientIdTxt_PreviewKeyDown" TextChanged="clientIdTxt_TextChanged"/>
+        <LineBreak/>
+        6. In the side menu, go to <Italic><Bold>Rich Presence > Art Assets</Bold></Italic>.
+        <LineBreak/>
+        7. Click on <Italic><Bold>"Add Images"</Bold></Italic> button and select all of your images you'll use.
+        <LineBreak/>
+        8. Give unique names to your images.
+        <LineBreak/>
+        9. Click on <Italic><Bold>"Upload Assets"</Bold></Italic> button.
+        <LineBreak/>
+        10. Exit the browser and click on <Button Name="finishBtn" Content="this button" IsEnabled="False" Margin="2 0 2 -5" Width="70" Click="finishBtn_Click"/>.
+    </TextBlock>
+</Window>
