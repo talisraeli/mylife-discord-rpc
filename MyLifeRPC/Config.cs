@@ -23,7 +23,7 @@ namespace MyLife
             Templates = new Dictionary<string, RichPresence>(StringComparer.CurrentCulture);
             Templates.Add("Custom", new RichPresence()
             {
-                Details = "I'm using MyLife RP!",
+                Details = "I'm using MyLife!",
                 State = "Made by KeshetBehanan#6796",
                 Timestamps = new Timestamps()
                 {
